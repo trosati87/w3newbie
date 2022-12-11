@@ -1,37 +1,45 @@
 ﻿
+/* Ensures design take up full height and width of screen */
+html, body {
+	height: 100%;
+	width: 100%;
+}
 
 
 
+/* Navigation styling */
+
+.navbar {
+	background-color: #23415c;
+	padding: 1% 0;
+	font-size: 1.2em;
+}
+
+/* logo stylization (sizing and padding to fit navbar, so when we flex navbar down list items don't override logo) */
+.navbar-brand {
+	min-height: 55px;
+	padding: 0 15px 5px;
+}
+
+.navbar-default .navbar-nav li a{
+	color: #D5D5D5;
+}
+
+/* active & hover effect for navbar links - see HTML for "active" class in Nav Links, highlights active page that user is currently on (best for multi-page websites */
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active {
+	color: #fff;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*--- iOS Landing Page Fix
+/* styling for the background landing page */
 section {
- 	position: relative;
- 	width: 100%;
- 	height: 100%;
- 	display: table;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: table;
 }
-.home-wrap {
- 	clip: rect(0, auto, auto, 0);
- 	position: absolute;
- 	top: 0;
- 	left: 0;
- 	width: 100%;
- 	height: 100%;
-}
+
 #home {
 	background-image: url('img/mountains.jpeg');
  	position: fixed;
@@ -47,20 +55,8 @@ section {
 	will-change: transform;
 	z-index: -1;
 }
-.landing-text {
-	z-index: 100;
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-}
---*/
-/*--- iOS Fixed Image Fix
-figure {
-	position: relative;
-	width: 100%;
-	height: 60%;
-}
-.fixed-wrap {
+
+.home-wrap {
 	clip: rect(0, auto, auto, 0);
 	position: absolute;
 	top: 0;
@@ -68,6 +64,27 @@ figure {
 	width: 100%;
 	height: 100%;
 }
+
+.landing-text {
+	z-index: 100;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.landing-text h1{
+	font-size: 500%;
+	font-weight: 700;
+}
+
+.padding {
+	padding: 80px 0;
+}
+
+.padding img{
+	width: 100%;
+}
+
 #fixed {
 	background-image: url('img/background.jpg');
 	position: fixed;
@@ -82,4 +99,52 @@ figure {
           transform: translateZ(0);
 	will-change: transform;
 }
---*/
+
+figure {
+	position: relative;
+	width: 100%;
+	height: 60%;
+}
+.fixed-wrap {
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+footer {
+	width: 100%;
+	background-color: #23415c;
+	padding: 5% 5% 10% 5%;
+	color: #fff;
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: #fff;
+}
+
+.fa:hover {
+	color: #d5d5d5;
+	text-decoration: none;
+}
+
+.icon {
+	max-width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

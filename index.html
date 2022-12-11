@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Bootstrap Landing Page Website Tutorial</title>
-  <!-- Viewport with device with initial scale one for mobile website responsiveness -->
+  <!-- Viewport with device with initial scale one for mobile website responsiveness ----->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS file -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,36 +16,146 @@
   <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-<!-- NAVIGATION BAR -->
+<!-- BOOTSTRAP NAVIGATION BAR ----------------------------------------------------------->
   <!-- Bootstrap's default navigation bar, which will stay fixed at top -->
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <!-- container fluid is best for Bootstrap's mobile websites -->
-    <div class="container-fluid">
-      <!-- adding header to navigation bar -->
-      <div class="navbar-header">
-        <!-- collapsible button when viewing in mobile size, toggles the navigation bar -->
-        <button type="button" class="navbar-toggle" date-toggle="collapse" data-target="#navbar-collapse-main">
-          <!-- for screen readers who cannot tell there is a navigation button -->
-          <span class="sr-only">Toggle Navigation</span>
-          <!-- icon bars in the drop down navigation button -->
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- add logo image to the navbar, sourced from images file -->
-        <a class="navbar-brand" href="#"><img src="img/w3newbie.png" alt=""></a>
-      </div>
-      <!-- add unordered list/list items for the navigation links -->
-      <div class="collapse navbar-collapse" id="navbar-collapse-main">
-         <ul class="nav navbar-nav navbar-right">
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Testimonials</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!-- container fluid is best for Bootstrap's mobile websites -->
+  <div class="container-fluid">
+    <!-- adding header to navigation bar -->
+    <div class="navbar-header">
+      <!-- collapsible button when viewing in mobile size, toggles the navigation bar -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <!-- for screen readers who cannot tell there is a navigation button -->
+        <span class="sr-only">Toggle Navigation</span>
+        <!-- icon bars in the drop down navigation button -->
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- add logo image to the navbar, sourced from images file -->
+      <a class="navbar-brand" href="#"><img src="img/w3newbie.png" alt=""></a>
     </div>
-  </nav>
+    <!-- add unordered list/list items for the navigation links -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Fixed screen fixed image background --------------------------------------------->
+<section>
+	<div class="landing-text">
+		<h1>BOOTSTRAP</h1>
+		<h3>Learn the basic building blocks.</h3>
+		<a href="#" class="btn btn-default btn-lg">Get Started</a>
+	</div>
+	<div class="home-wrap">
+    <div id="home">
+    </div>
+  </div>
+</section>
+<!-- <div class="home">
+  <div class="landing-text">
+    <h1>BOOTSTRAP</h1>
+    <h3>Learn the basic building blocks.</h3>
+    <a href="#" class="btn btn-default btn-lg">Get Started</a>
+  </div>
+</div> -->
+
+<!-- Two Column section -------------------------------------------------------------->
+<div class="padding">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="img/bootstrap.png" alt="">
+    </div>
+    <div class="col-sm-6 text-center">
+      <h2>All About Using Bootstrap</h2>
+      <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ab dolorum sapiente omnis nisi nemo quaerat ea laboriosam culpa necessitatibus! Illum molestiae architecto assumenda ab repudiandae neque eveniet sapiente itaque?</p>
+      <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ab dolorum sapiente omnis nisi nemo quaerat ea laboriosam culpa necessitatibus! Illum molestiae architecto assumenda ab repudiandae neque eveniet sapiente itaque?</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Four Column section ------------------------------------------------------------->
+<div class="padding">
+<div class="container">
+  <div class="row">
+  <!--Responsive sizing: lg/md - 4 columns, sm - 2 columns, xs - 1 column (mobile phone screen)  -->
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <h4>Built with Sass</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis quaerat optio laudantium omnis est eos, assumenda iusto aliquid similique iure ullam? Dolorum est ipsam iure aspernatur, hic accusamus deserunt fugit?</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> 
+      <img src="img/sass.png" class="img-responsive">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <h4>And Less</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque fugiat tenetur optio voluptatem id natus iste, accusantium, repellat quo debitis, architecto mollitia voluptate rerum. Dignissimos, ab? Quos recusandae reiciendis aliquid?</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="img/less.png" class="img-responsive">
+  </div>
+</div>
+</div>
+
+<!-- Fixed background image section -------------------------------------------------->
+<figure>
+	<div class="fixed-wrap">
+    <div id="fixed">
+    </div>
+  </div>
+</figure>
+<!-- <div id="fixed">
+
+</div> -->
+
+<!-- Second two column section ------------------------------------------------------->
+<div class="padding">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h4>Here's the cool thing about Bootstrap...</h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ab dolorum sapiente omnis nisi nemo quaerat ea laboriosam culpa necessitatibus! Illum molestiae architecto assumenda ab repudiandae neque eveniet sapiente itaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi beatae cumque, distinctio alias voluptates quis eos laboriosam quia veniam necessitatibus repellat, blanditiis eius, praesentium iusto repellendus mollitia rerum aliquam.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ab dolorum sapiente omnis nisi nemo quaerat ea laboriosam culpa necessitatibus! Illum molestiae architecto assumenda ab repudiandae neque eveniet sapiente itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt vitae, consequatur mollitia ea cumque rerum quia nihil sit corrupti modi deserunt, facere perspiciatis velit aliquid cum repudiandae eaque aperiam praesentium?</p>
+    </div>
+    <div class="col-sm-6">
+      <img src="img/bootstrap2.png" alt="">
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Footer and Social Media icons ------------------------------------------------->
+<Footer class="container-flui text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Contact Us</h3>
+      <br>
+      <h4>Our address and contact info here.</h4>
+    </div>
+    <div class="col-sm-4">
+      <h3>Connect</h3>
+  <!--- Font-Awesome icons --------------------------------------------------------->
+      <a href="#" class=" fa fa-facebook"></a>
+      <a href="#" class=" fa fa-twitter"></a>
+      <a href="#" class=" fa fa-google"></a>
+      <a href="#" class=" fa fa-linkedin"></a>
+      <a href="#" class=" fa fa-youtube"></a>
+    </div>
+    <div class="col-sm-4">
+      <img src="img/b.png" class="icon" alt="">
+    </div>
+  </div>
+</Footer>
 
 
 
