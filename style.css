@@ -54,6 +54,7 @@ section {
           transform: translateZ(0);
 	will-change: transform;
 	z-index: -1;
+	
 }
 
 .home-wrap {
@@ -84,6 +85,7 @@ section {
 .padding img{
 	width: 100%;
 }
+
 
 #fixed {
 	background-image: url('img/background.jpg');
@@ -134,6 +136,22 @@ footer {
 
 .icon {
 	max-width: 200px;
+}
+
+/* Sizing for mobile screens */
+@media (max-width: 768px) {
+	.landing-text h1{
+		font-size: 300%;
+	}
+	.fa {
+		font-size: 20px;
+		padding: 10px;
+	}
+	.icon {
+		padding-top: 5%;
+		max-width: 100px;
+	}
+	
 }
 
 
